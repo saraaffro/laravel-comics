@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     @vite("resources/js/app.js")
-
-    @yield('head')
 </head>
 <body>
     <div class="text-center">
