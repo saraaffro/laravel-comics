@@ -217,5 +217,48 @@ Route::get('/', function () {
         ],
     ];
 
-    return view('pages.index', compact("comics"));
+    $links = [
+        [
+            'text' => 'CHARACTERS',
+            'status' => false,
+        ],
+        [
+            'text' => 'COMICS',
+            'status' => true,
+        ],
+        [
+            'text' => 'MOVIES',
+            'status' => false,
+        ],
+        [
+            'text' => 'TV',
+            'status' => false,
+        ],
+        [
+            'text' => 'GAMES',
+            'status' => false,
+        ],
+        [
+            'text' => 'COLLECTIBLES',
+            'status' => false,
+        ],
+        [
+            'text' => 'VIDEOS',
+            'status' => false,
+        ],
+        [
+            'text' => 'FANS',
+            'status' => false,
+        ],
+        [
+            'text' => 'NEWS',
+            'status' => false,
+        ],
+        [
+            'text' => 'SHOP',
+            'status' => false,
+        ],
+    ];
+
+    return view('pages.index', compact("comics", "links"));
 });

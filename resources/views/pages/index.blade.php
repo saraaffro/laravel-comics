@@ -18,6 +18,7 @@
                 </div>
             </div>
         @endforeach
+        <a href="#" class="button">LOAD MORE</a>
     </div> 
 </main>
    

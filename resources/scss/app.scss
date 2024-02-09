@@ -1,5 +1,62 @@
 @import "~bootstrap/scss/bootstrap";
 
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    background-color: white;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        .logo-container {
+            width: 55px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            li a {
+                color: black;
+                padding: 31px 7px;
+                font-size: 12px;
+
+                &:hover,
+                &.active {
+                    color: #0282f9;
+                }
+
+                &.active {
+                    border-bottom: 3px solid #0282f9;
+                }
+            }
+
+
+        }
+    }
+}
+
 main{
     background-color: #1c1c1c;
 
@@ -57,6 +114,7 @@ main{
         height: 9vw;
         color: white;
         margin-bottom: 70px;
+        cursor: pointer;
     
         .img-thumb-container {
             height: 100%;
