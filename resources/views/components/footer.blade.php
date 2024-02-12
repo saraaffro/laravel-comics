@@ -1,18 +1,5 @@
 <footer>
-    <section class="features">
-        <div class="container">
-            @foreach($features as $feat)
-                <div class="feat">
-                    <div class="img-container">
-                        <img src="{{asset($feat["image"])}}" alt="features">
-                    </div>
-                    <div class="feat-text">
-                        {{ $feat["text"] }}
-                    </div>
-                </div>
-            @endforeach
-        </div>
-    </section>
+    
     <section class="site-info">
         <div class="container">
             <div class="col">

@@ -5,8 +5,13 @@
         </div>
         <ul>
             @foreach($links as $link)
-            <li><a href="#">{{$link["text"]}}</a></li>
+            <li><a class="{{ $link['status'] ? 'active' : '' }}" href="#">{{$link["text"]}}</a></li>
             @endforeach
+            <input type="text" placeholder="Search"><i class="fa-solid fa-magnifying-glass"></i>
         </ul>
     </div>
 </header>
+
+<div class="jumbotron">
+</div>
+
